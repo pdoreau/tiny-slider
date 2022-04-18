@@ -549,6 +549,7 @@ export var tns = function(options) {
   }
 
   function getViewportWidth () {
+    edgePadding = getOption('edgePadding');
     var gap = edgePadding ? edgePadding * 2 - gutter : 0;
     return getClientWidth(containerParent) - gap;
   }
